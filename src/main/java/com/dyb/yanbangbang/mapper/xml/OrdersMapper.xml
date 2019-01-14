@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dyb.yanbangbang.mapper.OrdersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dyb.yanbangbang.entity.Orders">
+        <id column="order_id" property="orderId" />
+        <result column="order_code" property="orderCode" />
+        <result column="shop_id" property="shopId" />
+        <result column="buyer_id" property="buyerId" />
+        <result column="material_id" property="materialId" />
+        <result column="state" property="state" />
+        <result column="order_type" property="orderType" />
+        <result column="create_time" property="createTime" />
+        <result column="pay_time" property="payTime" />
+        <result column="end_time" property="endTime" />
+        <result column="delivery_time" property="deliveryTime" />
+        <result column="refund_apply_time" property="refundApplyTime" />
+        <result column="refund_time" property="refundTime" />
+        <result column="exp_num" property="expNum" />
+        <result column="exp_name" property="expName" />
+        <result column="specification" property="specification" />
+        <result column="price" property="price" />
+        <result column="count" property="count" />
+        <result column="total_money" property="totalMoney" />
+        <result column="address" property="address" />
+        <result column="use_coupon_id" property="useCouponId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        order_id, order_code, shop_id, buyer_id, material_id, state, order_type, create_time, pay_time, end_time, delivery_time, refund_apply_time, refund_time, exp_num, exp_name, specification, price, count, total_money, address, use_coupon_id
+    </sql>
+
+</mapper>

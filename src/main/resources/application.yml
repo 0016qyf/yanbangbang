@@ -1,0 +1,24 @@
+#设置项目当前的运行环境
+spring:
+  profiles:
+    active: dev
+
+  #设置项目标识
+  jmx:
+    default-domain: ybb
+
+#mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath:com/dyb/yanbangbang/mapper/xml/*.xml
+  typeAliasesPackage: com.dyb.yanbangbang.entity
+  global-config:
+    db-column-underline: true
+
+
+
+##配置视图解析器
+#  #配置html视图解析器
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/views/
+#      suffix: .jsp

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dyb.yanbangbang.mapper.GoodEvaluateMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dyb.yanbangbang.entity.GoodEvaluate">
+        <id column="good_evaluate_id" property="goodEvaluateId" />
+        <result column="order_id" property="orderId" />
+        <result column="material_id" property="materialId" />
+        <result column="buyer_head_Img" property="buyerHeadImg" />
+        <result column="buyer_nike_name" property="buyerNikeName" />
+        <result column="buyer_id" property="buyerId" />
+        <result column="introduce_match_score" property="introduceMatchScore" />
+        <result column="goods_value_score" property="goodsValueScore" />
+        <result column="teacher_service_score" property="teacherServiceScore" />
+        <result column="answer_speed_score" property="answerSpeedScore" />
+        <result column="exp_service_score" property="expServiceScore" />
+        <result column="order_code" property="orderCode" />
+        <result column="content" property="content" />
+        <result column="evaluation_time" property="evaluationTime" />
+        <result column="evaluate_type" property="evaluateType" />
+        <result column="resource_id" property="resourceId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        good_evaluate_id, order_id, material_id, buyer_head_Img, buyer_nike_name, buyer_id, introduce_match_score, goods_value_score, teacher_service_score, answer_speed_score, exp_service_score, order_code, content, evaluation_time, evaluate_type, resource_id
+    </sql>
+
+</mapper>

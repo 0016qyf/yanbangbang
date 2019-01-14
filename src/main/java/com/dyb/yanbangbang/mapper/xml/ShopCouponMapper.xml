@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dyb.yanbangbang.mapper.ShopCouponMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dyb.yanbangbang.entity.ShopCoupon">
+        <id column="shop_coupon_id" property="shopCouponId" />
+        <result column="type" property="type" />
+        <result column="shop_name" property="shopName" />
+        <result column="shop_id" property="shopId" />
+        <result column="name" property="name" />
+        <result column="total_count" property="totalCount" />
+        <result column="surplus_count" property="surplusCount" />
+        <result column="amount" property="amount" />
+        <result column="min_amount" property="minAmount" />
+        <result column="create_time" property="createTime" />
+        <result column="creator_id" property="creatorId" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="school" property="school" />
+        <result column="major" property="major" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        shop_coupon_id, type, shop_name, shop_id, name, total_count, surplus_count, amount, min_amount, create_time, creator_id, start_time, end_time, school, major
+    </sql>
+
+</mapper>

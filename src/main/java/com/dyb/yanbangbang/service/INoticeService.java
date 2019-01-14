@@ -1,0 +1,21 @@
+package com.dyb.yanbangbang.service;
+
+import com.baomidou.mybatisplus.service.IService;
+import com.dyb.yanbangbang.entity.Notice;
+
+import java.util.List;
+
+/**
+ * <p>
+ *  服务类
+ * </p>
+ *
+ * @author Tang
+ * @since 2018-12-29
+ */
+public interface INoticeService extends IService<Notice> {
+
+    boolean save(Notice notice,Integer resourceId);
+
+    List<Notice> selectAll();
+}

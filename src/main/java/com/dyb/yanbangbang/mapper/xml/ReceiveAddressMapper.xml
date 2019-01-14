@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dyb.yanbangbang.mapper.ReceiveAddressMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dyb.yanbangbang.entity.ReceiveAddress">
+        <id column="detail_address_id" property="detailAddressId" />
+        <result column="user_id" property="userId" />
+        <result column="receiver" property="receiver" />
+        <result column="phone" property="phone" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="area" property="area" />
+        <result column="detail_address" property="detailAddress" />
+        <result column="address_sign" property="addressSign" />
+        <result column="is_default" property="isDefault" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        detail_address_id, user_id, receiver, phone, province, city, area, detail_address, address_sign, is_default, create_time, update_time
+    </sql>
+
+</mapper>

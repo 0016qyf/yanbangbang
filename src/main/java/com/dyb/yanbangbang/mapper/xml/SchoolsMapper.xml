@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dyb.yanbangbang.mapper.SchoolsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dyb.yanbangbang.entity.Schools">
+        <id column="school_id" property="schoolId" />
+        <result column="school_name" property="schoolName" />
+        <result column="school_pro_id" property="schoolProId" />
+        <result column="school_type_id" property="schoolTypeId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        school_id, school_name, school_pro_id, school_type_id
+    </sql>
+
+</mapper>

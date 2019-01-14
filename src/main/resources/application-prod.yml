@@ -1,0 +1,45 @@
+#配置端口号和访问前缀
+server:
+  port: 8081
+  servlet:
+    context-path: /ybb
+
+#数据库配置
+spring:
+    datasource:
+      url: jdbc:mysql://127.0.0.1:3306/yanbangbang?useUnicode=true&characterEncoding=utf8
+      username: "duoyibu"
+      password: "!W7Ei3UN"
+      driverClassName: com.mysql.cj.jdbc.Driver
+
+#配置日志
+logging:
+  #配置日志文件路径
+  level:
+    org.springfromework.web: info
+  file: /tmp/ybbWxServer.log
+
+
+
+jedis :
+  pool :
+    host : 127.0.0.1
+    port : 6379
+    password: "fljkrSUTJsT56lI4"
+    config :
+      maxTotal: 100
+      maxIdle: 10
+      maxWaitMillis : 100000
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # * 在yaml 文件属于关键字
+  server:
+    port: 8181
+
+  endpoint:
+    shutdown:
+      enabled: true

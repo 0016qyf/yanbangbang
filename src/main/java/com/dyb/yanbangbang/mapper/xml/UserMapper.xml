@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dyb.yanbangbang.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dyb.yanbangbang.entity.User">
+        <id column="user_id" property="userId" />
+        <result column="user_name" property="userName" />
+        <result column="password" property="password" />
+        <result column="phone" property="phone" />
+        <result column="gender" property="gender" />
+        <result column="name" property="name" />
+        <result column="age" property="age" />
+        <result column="avatarurl" property="avatarurl" />
+        <result column="address" property="address" />
+        <result column="nike_name" property="nikeName" />
+        <result column="u_school" property="uSchool" />
+        <result column="pid" property="pid" />
+        <result column="school" property="school" />
+        <result column="u_major" property="uMajor" />
+        <result column="major" property="major" />
+        <result column="major_score" property="majorScore" />
+        <result column="openid" property="openid" />
+        <result column="unionid" property="unionid" />
+        <result column="state" property="state" />
+        <result column="type" property="type" />
+        <result column="invite_code" property="inviteCode" />
+        <result column="introduction" property="introduction" />
+        <result column="idcard_img" property="idcardImg" />
+        <result column="major_score_img" property="majorScoreImg" />
+        <result column="stu_card_or_offer_img" property="stuCardOrOfferImg" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, user_name, password, phone, gender, name, age, avatarurl, address, nike_name, u_school, pid, school, u_major, major, major_score, openid, unionid, state, type, invite_code, introduction, idcard_img, major_score_img, stu_card_or_offer_img
+    </sql>
+
+</mapper>
